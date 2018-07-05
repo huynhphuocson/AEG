@@ -25,7 +25,7 @@ $(document).ready(function(){
            text: 'Chart with orders'
        },
    };
-   $.getJSON('/AEG_2/admin/home/datacharts', function (data) {
+   $.getJSON('/AEG_2/AEG/admin/home/datacharts', function (data) {
        /*console.log(data);*/
 
        /*var i = 0;
@@ -46,7 +46,7 @@ $(document).ready(function(){
    $('#clickme').click(function(event) {
        event.preventDefault();
        $.ajax({
-           url : "/AEG_2/admin/home/datacharts",
+           url : "/AEG_2/AEG/admin/home/datacharts",
            type : "post",
            dataType:"json",
            data : {
